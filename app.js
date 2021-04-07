@@ -1,0 +1,16 @@
+'use strict'
+
+const express = require('express')
+
+const PORT = 8000
+const HOST = '0.0.0.0'
+
+const app = express()
+app.get('/', (req, res) => {
+    res.send('Jervin Descrates Kontessa\n')
+    res.send('Nim 51018013\n')
+    res.send('Jurusan Sistem Informasi\n')
+})
+
+app.listen(PORT, HOST)
+console.log(`Running on http://${HOST}:${PORT}`)
